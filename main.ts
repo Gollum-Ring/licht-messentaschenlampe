@@ -1,4 +1,8 @@
 let Licht = 0
+input.onPinTouchEvent(TouchPin.P1, input.buttonEventDown(), function () {
+    basic.clearScreen()
+    basic.turnRgbLedOff()
+})
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     Licht = input.lightLevel()
 })
